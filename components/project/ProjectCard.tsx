@@ -1,36 +1,24 @@
 import Link from "next/link";
-import {
-  ArrowUpRight,
-  ExternalLink,
-  Code2,
-  NotebookPen,
-  FlaskConical,
-  Rocket,
-} from "lucide-react";
+import Image from "next/image";
+import { ArrowUpRight, ExternalLink, Code2, NotebookPen } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { TechPillList } from "@/components/project/TechPillList";
 import type { Project } from "@/lib/data/projects";
 
 export function ProjectCard({ project }: { project: Project }) {
-  const HeaderIcon =
-    project.type === "Deployed"
-      ? Rocket
-      : project.type === "Applied AI"
-        ? Code2
-        : FlaskConical;
-
   return (
     <Card className="group flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:border-accent hover:shadow-accent motion-reduce:hover:translate-y-0">
       <div
-        aria-hidden="true"
-        className="relative flex h-28 items-center justify-center overflow-hidden border-b border-border bg-[radial-gradient(circle_at_30%_20%,var(--accent-subtle),var(--surface)_70%)]"
+        className="relative aspect-[16/9] overflow-hidden border-b border-border bg-surface"
       >
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,var(--border)_1px,transparent_1px),linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] bg-[size:28px_28px] opacity-40" />
-        <HeaderIcon
-          size={36}
-          strokeWidth={1.25}
-          className="relative text-accent transition-transform duration-300 group-hover:scale-110"
+        <Image
+          src={project.image}
+          alt={`Illustrated project cover for ${project.title}`}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
         />
       </div>
       <CardHeader>
@@ -81,17 +69,16 @@ export function ProjectCard({ project }: { project: Project }) {
               <NotebookPen size={16} strokeWidth={1.75} /> Notebook
             </Link>
           )}
-          <Link
-            href={`/projects/${project.slug}`}
-            className="group/cta ml-auto inline-flex items-center gap-1 text-sm font-medium text-accent"
-          >
-            Case Study
-            <ArrowUpRight
-              size={16}
-              strokeWidth={1.75}
-              className="transition-transform duration-200 group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5"
-            />
-          </Link>
+          <Button asChild size="sm" className="ml-auto">
+            <Link href={`/projects/${project.slug}`}>
+              View Details
+              <ArrowUpRight
+                size={16}
+                strokeWidth={1.75}
+                className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              />
+            </Link>
+          </Button>
         </div>
       </CardContent>
     </Card>

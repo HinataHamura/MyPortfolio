@@ -1,12 +1,8 @@
-import { Code2, FlaskConical } from "lucide-react";
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import type { Project } from "@/lib/data/projects";
 
-// Placeholder visual in place of a real screenshot — swap for an actual
-// product screenshot (Cook.io / Chat App) or notebook result graph once available.
 export function ProjectHero({ project }: { project: Project }) {
-  const Icon = project.type === "Research Notebook" ? FlaskConical : Code2;
-
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-wrap items-center gap-3">
@@ -28,11 +24,15 @@ export function ProjectHero({ project }: { project: Project }) {
         {project.summary}
       </p>
 
-      <div
-        aria-hidden="true"
-        className="flex h-64 w-full items-center justify-center rounded-card border border-border bg-[linear-gradient(135deg,var(--accent-subtle),transparent)] sm:h-80"
-      >
-        <Icon size={56} strokeWidth={1.25} className="text-accent" />
+      <div className="relative aspect-[16/8] w-full overflow-hidden rounded-card border border-border bg-surface">
+        <Image
+          src={project.image}
+          alt={`Illustrated project cover for ${project.title}`}
+          fill
+          sizes="(max-width: 1024px) 100vw, 1280px"
+          priority
+          className="object-cover"
+        />
       </div>
     </div>
   );

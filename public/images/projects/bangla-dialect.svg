@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="15" x2="1080" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#203E39"/>
+      <stop offset="1" stop-color="#111C23"/>
+    </linearGradient>
+    <linearGradient id="line" x1="275" y1="0" x2="930" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E5BD7B"/>
+      <stop offset="1" stop-color="#74C5A2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="32" fill="url(#bg)"/>
+  <g opacity=".16" stroke="#C9DDD2">
+    <path d="M100 150h1000M100 250h1000M100 350h1000M100 450h1000M100 550h1000"/>
+    <path d="M200 100v475M400 100v475M600 100v475M800 100v475M1000 100v475"/>
+  </g>
+  <path d="M230 375c88-128 166-128 254 0s166 128 254 0 166-128 232-34" stroke="url(#line)" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="230" cy="375" r="22" fill="#E5BD7B"/>
+  <circle cx="484" cy="375" r="22" fill="#D5C38E"/>
+  <circle cx="738" cy="375" r="22" fill="#A5C99B"/>
+  <circle cx="970" cy="341" r="22" fill="#74C5A2"/>
+  <rect x="385" y="150" width="430" height="88" rx="44" fill="#142A29" stroke="#719C83" stroke-opacity=".6" stroke-width="2"/>
+  <text x="600" y="207" fill="#F1E6D3" font-family="Arial,sans-serif" font-size="37" text-anchor="middle">আঞ্চলিক ভাষা → বাংলা</text>
+  <text x="102" y="615" fill="#F4F0E7" font-family="Arial,sans-serif" font-size="34" font-weight="700">Bangla Dialect Research</text>
+  <text x="1095" y="615" fill="#BBD8C2" font-family="Arial,sans-serif" font-size="21" text-anchor="end">11 REGIONS</text>
+</svg>

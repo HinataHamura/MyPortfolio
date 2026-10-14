@@ -21,7 +21,7 @@ const stack = [
 
 export function TechStack() {
   return (
-    <section aria-label="Tooling overview" className="bg-surface/60">
+    <section id="tech-stack" aria-label="Tooling overview" className="bg-surface/60 scroll-mt-24">
       <div className="mx-auto max-w-[1280px] px-6 pb-24 sm:pb-32">
         <RevealOnScroll>
           <p className="font-mono text-xs uppercase tracking-wide text-foreground-secondary">

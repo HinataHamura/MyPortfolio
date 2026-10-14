@@ -27,7 +27,10 @@ export function About() {
           <p className="max-w-2xl text-base leading-relaxed text-foreground-secondary sm:text-lg">
             {profile.positioning}
           </p>
-          <dl className="grid grid-cols-1 gap-4 border-t border-border pt-6 sm:grid-cols-2">
+          <dl
+            id="education"
+            className="scroll-mt-24 grid grid-cols-1 gap-4 border-t border-border pt-6 sm:grid-cols-2"
+          >
             <div>
               <dt className="font-mono text-xs uppercase tracking-wide text-foreground-secondary">
                 Education

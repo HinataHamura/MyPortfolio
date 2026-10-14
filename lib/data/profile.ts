@@ -6,12 +6,13 @@ export const profile = {
   location: "Rajshahi, Bangladesh",
   email: "eshafarzana666@gmail.com",
   phone: "+880 1306-570252",
+  whatsapp: "https://wa.me/8801306570252",
   linkedin: "https://linkedin.com/in/atkia-farzana-esha-069389229",
   github: "https://github.com/HinataHamura",
   positioning:
     "Undergraduate CSE student at RUET with an IEEE-published paper, two accepted papers, and a further submission across NLP, speech recognition, multimodal learning, and satellite-based ML. I focus on rigorous, leak-free evaluation, error analysis, and clear technical reporting, applying ML across medical, astronomy, linguistic, environmental, and education data.",
   about:
-    "I am a research-driven CSE student at RUET specializing in machine learning, NLP, and speech recognition. I build and rigorously evaluate PyTorch models on real-world data, with work spanning Bangla dialect modeling, ASR evaluation, multimodal learning, and satellite-informed forecasting.",
+    "My programming journey began with my CSE studies at RUET and grew into applied machine learning research: first exploring Bangla dialect modeling, then extending into speech recognition, multimodal learning, and satellite-informed forecasting. I enjoy turning difficult, real-world questions into carefully evaluated models and useful software. I value honest experiments—including negative results—clear communication, and technology that can serve people across languages and disciplines. Outside programming, I’m especially interested in language access and education, and how digital tools can support Bangla and low-resource communities.",
 } as const;
 
 export const education = {

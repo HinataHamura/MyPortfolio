@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Code2, Send, Mail } from "lucide-react";
+import { Code2, Send, Mail, Phone, MessageCircle } from "lucide-react";
 import { RevealOnScroll } from "@/components/motion/RevealOnScroll";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
@@ -30,6 +30,20 @@ export function Contact() {
             <Link href={profile.github} target="_blank" rel="noopener noreferrer">
               <Code2 size={16} strokeWidth={1.75} /> GitHub
             </Link>
+          </Button>
+          <Button asChild variant="outline">
+            <a href={`tel:${profile.phone}`}>
+              <Phone size={16} strokeWidth={1.75} /> {profile.phone}
+            </a>
+          </Button>
+          <Button asChild variant="outline">
+            <a
+              href={profile.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle size={16} strokeWidth={1.75} /> WhatsApp
+            </a>
           </Button>
         </div>
       </RevealOnScroll>

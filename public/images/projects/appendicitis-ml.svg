@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="20" x2="1100" y2="655" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3A2935"/>
+      <stop offset="1" stop-color="#151B27"/>
+    </linearGradient>
+    <linearGradient id="chart" x1="385" y1="0" x2="840" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0B77A"/>
+      <stop offset="1" stop-color="#E98180"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="32" fill="url(#bg)"/>
+  <circle cx="1005" cy="145" r="180" fill="#E98180" opacity=".1"/>
+  <rect x="142" y="112" width="916" height="426" rx="24" fill="#201F2B" stroke="#795361" stroke-opacity=".65" stroke-width="2"/>
+  <path d="M220 442h756M220 442V195" stroke="#78808C" stroke-width="3"/>
+  <path d="m230 410 118-70 110 27 122-132 117 46 114-112 151 38" stroke="url(#chart)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#F0B77A">
+    <circle cx="230" cy="410" r="10"/><circle cx="348" cy="340" r="10"/><circle cx="458" cy="367" r="10"/>
+    <circle cx="580" cy="235" r="10"/><circle cx="697" cy="281" r="10"/><circle cx="811" cy="169" r="10"/><circle cx="962" cy="207" r="10"/>
+  </g>
+  <rect x="817" y="132" width="183" height="58" rx="29" fill="#41303A"/>
+  <text x="908" y="170" fill="#F2C391" font-family="Arial,sans-serif" font-size="20" text-anchor="middle">ENSEMBLE ML</text>
+  <text x="142" y="615" fill="#F6F0EE" font-family="Arial,sans-serif" font-size="34" font-weight="700">Pediatric Appendicitis ML</text>
+  <text x="1058" y="615" fill="#E9A28E" font-family="Arial,sans-serif" font-size="21" text-anchor="end">AUTOGLUON</text>
+</svg>

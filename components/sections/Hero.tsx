@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Monogram } from "@/components/Monogram";
@@ -73,7 +73,13 @@ export function Hero() {
             </Link>
           </Button>
           <Button asChild variant="ghost">
-            <Link href="/resume">Resume</Link>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1NFewBgCmLXRv85el1Nj4dRvQEclkadhP"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Download size={16} strokeWidth={1.75} /> Download Resume
+            </a>
           </Button>
         </motion.div>
 

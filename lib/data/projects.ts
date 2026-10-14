@@ -6,6 +6,7 @@ export type Project = {
   type: ProjectType;
   statusBadge: string;
   period?: string;
+  image: string;
   summary: string;
   problem: string;
   motivation: string;
@@ -27,6 +28,7 @@ export const projects: Project[] = [
     title: "VoicePandita — Voice-First AI Tutor for Bangla Learners",
     type: "Applied AI",
     statusBadge: "Infinity AI BuildFest 2026 · EdTech",
+    image: "/images/projects/voicepandita.svg",
     summary:
       "Bangla-first, curriculum-grounded AI tutor for text, voice, and photographed questions, with verified language support for Chakma, Marma, and Garo.",
     problem:
@@ -74,6 +76,7 @@ export const projects: Project[] = [
     title: "Bangla Dialect Standardization & Classification",
     type: "Research Notebook",
     statusBadge: "Published Research",
+    image: "/images/projects/bangla-dialect.svg",
     summary:
       "BiLSTM-based dialect-to-standard normalization and classification across 11 regional Bangla dialects — the research underpinning an IEEE publication.",
     problem:
@@ -104,6 +107,7 @@ export const projects: Project[] = [
     title: "Regensburg Pediatric Appendicitis ML Model",
     type: "Research Notebook",
     statusBadge: "Research Notebook",
+    image: "/images/projects/appendicitis-ml.svg",
     summary:
       "Pediatric appendicitis prediction pipeline on the Regensburg dataset using AutoGluon stacked ensembles, reaching >99% on the target metric.",
     problem:
@@ -141,6 +145,7 @@ export const projects: Project[] = [
     title: "Real-Time Chat Application with Authentication",
     type: "Deployed",
     statusBadge: "Deployed",
+    image: "/images/projects/chat-app.svg",
     period: "Feb 2026 – Apr 2026",
     summary:
       "Full-stack real-time chat app with JWT auth, group messaging, and file sharing — deployed on Azure with Nginx and PM2.",
@@ -185,6 +190,7 @@ export const projects: Project[] = [
     title: "Cook.io — Secure Recipe Discovery & Analytics Platform",
     type: "Deployed",
     statusBadge: "Deployed",
+    image: "/images/projects/cookio.svg",
     period: "Mar 2025 – Oct 2025",
     summary:
       "Full-stack recipe discovery app with Firebase auth, a secured Spoonacular API proxy, and an ML-based recipe category predictor (86% accuracy).",

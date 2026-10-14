@@ -3,7 +3,7 @@ import { profile } from "@/lib/data/profile";
 
 export const siteConfig = {
   name: profile.name,
-  url: "https://atkia-farzana-esha.vercel.app",
+  url: "https://my-portfolio-ten-inky-yopqds0hjd.vercel.app",
   description:
     "CSE undergraduate at RUET and aspiring AI researcher. Published IEEE author on Bangla NLP dialect classification, building and deploying production ML systems.",
 };

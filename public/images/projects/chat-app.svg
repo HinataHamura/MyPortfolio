@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="40" x2="1120" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#163D45"/>
+      <stop offset="1" stop-color="#111B2B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="32" fill="url(#bg)"/>
+  <circle cx="1000" cy="540" r="235" fill="#58B7A8" opacity=".1"/>
+  <rect x="230" y="84" width="740" height="500" rx="30" fill="#101E2A" stroke="#43717A" stroke-width="2"/>
+  <path d="M230 154h740" stroke="#31515B" stroke-width="2"/>
+  <circle cx="275" cy="119" r="8" fill="#E78C83"/><circle cx="302" cy="119" r="8" fill="#E6C07D"/><circle cx="329" cy="119" r="8" fill="#79C79D"/>
+  <rect x="270" y="192" width="310" height="83" rx="20" fill="#203849"/>
+  <circle cx="305" cy="233" r="19" fill="#6CA9AA"/>
+  <path d="M340 222h190m-190 22h140" stroke="#B7CFD1" stroke-opacity=".72" stroke-width="9" stroke-linecap="round"/>
+  <rect x="620" y="302" width="300" height="83" rx="20" fill="#276958"/>
+  <circle cx="655" cy="343" r="19" fill="#9AD8B0"/>
+  <path d="M690 332h190m-190 22h140" stroke="#E0F3E7" stroke-opacity=".8" stroke-width="9" stroke-linecap="round"/>
+  <rect x="270" y="412" width="350" height="83" rx="20" fill="#203849"/>
+  <circle cx="305" cy="453" r="19" fill="#D1A77C"/>
+  <path d="M340 442h230m-230 22h170" stroke="#B7CFD1" stroke-opacity=".72" stroke-width="9" stroke-linecap="round"/>
+  <text x="230" y="630" fill="#ECF5F5" font-family="Arial,sans-serif" font-size="34" font-weight="700">Real-Time Chat</text>
+  <text x="970" y="630" fill="#8FD5BE" font-family="Arial,sans-serif" font-size="21" text-anchor="end">WEBSOCKETS • JWT</text>
+</svg>

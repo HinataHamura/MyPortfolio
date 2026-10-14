@@ -9,7 +9,7 @@ export function FeaturedProjects() {
       <SectionHeading
         index="05"
         title="Featured Projects"
-        description="Research notebooks and deployed systems — proof of the full pipeline from model to production."
+        description="Applied AI research, full-stack systems, and deployed products—from model development to usable software."
       />
 
       <div className="mt-12 grid gap-6 md:grid-cols-2">

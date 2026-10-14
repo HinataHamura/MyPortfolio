@@ -8,9 +8,13 @@ import { profile } from "@/lib/data/profile";
 
 const navLinks = [
   { href: "/#about", label: "About" },
+  { href: "/#education", label: "Education" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#projects", label: "Projects" },
   { href: "/#research", label: "Research" },
   { href: "/#skills", label: "Skills" },
-  { href: "/#projects", label: "Projects" },
+  { href: "/#achievements", label: "Achievements" },
+  { href: "/#tech-stack", label: "Tech Stack" },
   { href: "/#contact", label: "Contact" },
 ];
 
@@ -30,7 +34,7 @@ export function Navbar() {
           {profile.initials}
         </Link>
 
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-4 lg:flex xl:gap-6">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
@@ -43,11 +47,11 @@ export function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <ThemeToggle />
         </div>
 
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
           <button
             type="button"
@@ -62,7 +66,7 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <ul className="flex flex-col gap-1 border-t border-border px-6 py-4 md:hidden">
+        <ul className="flex max-h-[calc(100vh-4rem)] flex-col gap-1 overflow-y-auto border-t border-border px-6 py-4 lg:hidden">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
